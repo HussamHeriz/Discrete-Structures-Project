@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hussamdev.discretestructures.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:background="#48544d"
+            android:textColor="#FFF"
+            android:padding="15dp"
+            android:layout_height="wrap_content"
+            android:text="Choose what you want to create"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_margin="30dp"
+            android:textAlignment="center"
+            android:id="@+id/topText"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_below="@id/topText"
+            android:id="@+id/linearLayout"
+            android:weightSum="2"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_weight="2"
+
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:background="#0099BD"
+                    android:text="Relation"
+                    android:textColor="#FFF"
+                    android:id="@+id/relation"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:text="RST Relation"
+                    android:layout_weight="1"
+                    android:background="#B6D3EF"
+                    android:id="@+id/rst"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="#B6D3EF"
+                    android:text="Function"
+                    android:layout_weight="1"
+                    android:id="@+id/function"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="102dp"
+                    android:background="#0099BD"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="Composition Of Functions"
+                    android:textSize="12sp"
+                    android:id="@+id/c_functions"
+                    android:textColor="#FFF"/>
+
+            </LinearLayout>
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_below="@id/linearLayout"
+                android:layout_height="wrap_content"
+                android:text="Programmed By"
+                android:textStyle="bold"
+                android:layout_margin="15dp"
+                android:textSize="18sp"
+                android:gravity="center"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_below="@id/linearLayout"
+                android:layout_height="wrap_content"
+                android:text="Hussam Heriz | Mohammed Al Jojo"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="#0099BD"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_below="@id/linearLayout"
+                android:layout_height="wrap_content"
+                android:text="Supervised By"
+                android:textStyle="bold"
+                android:layout_margin="15dp"
+                android:textSize="18sp"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_below="@id/linearLayout"
+                android:layout_height="wrap_content"
+                android:text="Dr.Nasser Al-Masri"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="#0099BD"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>

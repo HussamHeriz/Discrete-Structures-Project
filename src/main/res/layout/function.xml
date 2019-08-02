@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+
+        android:weightSum="2">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:weightSum="2"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_action_name"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:text="isLeftTotal"
+                android:textColor="#000"
+                android:layout_height="wrap_content" />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:enabled="false"
+                android:id="@+id/is_left_total"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/injective"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:text="Injective"
+                android:textColor="#000"
+                android:layout_height="wrap_content" />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:enabled="false"
+                android:id="@+id/injective"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:weightSum="2"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/right"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:text="isRightTotal"
+                android:textColor="#000"
+                android:layout_height="wrap_content" />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:enabled="false"
+                android:id="@+id/is_right_total"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/surjective"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:text="Surjective"
+                android:textColor="#000"
+                android:layout_height="wrap_content" />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:enabled="false"
+                android:id="@+id/surjective"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/equivalence" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:text="Bijective"
+        android:textColor="#000"
+        android:layout_height="wrap_content" />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        android:enabled="false"
+        android:id="@+id/bijective"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="25sp"
+                android:textColor="@color/colorPrimary"
+                android:id="@+id/imageof"
+                android:text="f(3) = 1"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="25sp"
+                android:id="@+id/preimageof"
+                android:textColor="@color/colorPrimary"
+                android:text="f(3) = 1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <com.shawnlin.numberpicker.NumberPicker
+                android:id="@+id/number_picker1"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:layout_weight="1"
+                android:layout_margin="15dp"
+                app:np_dividerColor="@color/colorPrimary"
+                app:np_selectedTextColor="@color/colorPrimary"
+                app:np_selectedTextSize="22sp"
+                app:np_textColor="@color/colorPrimary"
+                app:np_textSize="18sp"
+                app:np_value="3" />
+
+            <com.shawnlin.numberpicker.NumberPicker
+                android:id="@+id/number_picker2"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:layout_margin="15dp"
+                android:layout_weight="1"
+                app:np_dividerColor="@color/colorPrimary"
+                app:np_selectedTextColor="@color/colorPrimary"
+                app:np_selectedTextSize="22sp"
+                app:np_textColor="@color/colorPrimary"
+                app:np_textSize="18sp"
+                app:np_value="3" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Function's Name"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/btns_bg"
+        android:id="@+id/fname"
+        android:padding="15dp"
+        android:textSize="18sp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:layout_margin="15dp"
+        android:text="Save"
+        android:id="@+id/save"
+        android:textColor="#FFF"/>
+
+
+</LinearLayout>

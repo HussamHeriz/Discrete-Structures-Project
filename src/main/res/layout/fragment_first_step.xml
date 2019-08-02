@@ -1,0 +1,298 @@
+
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    >
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".Fragments.FirstStepFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:textSize="19sp"
+        android:textColor="#000"
+        android:text="Select your domain :" />
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:weightSum="3"
+        android:background="@drawable/btns_bg">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="0dp"
+            android:layout_weight="1"
+            android:textColor="#FFF"
+            android:id="@+id/decrement"
+            android:textStyle="bold"
+            android:background="@color/colorPrimary"
+            android:text="—"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="15"
+            android:textColor="@android:color/black"
+            android:inputType="number"
+            android:id="@+id/display"
+            android:gravity="center"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="0dp"
+            android:textSize="25sp"
+            android:textColor="#FFF"
+            android:background="@color/colorPrimary"
+            android:id="@+id/increment"
+            android:text="+"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp">
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:id="@+id/cb"
+            android:text="Select Range [ a, b ]"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:text="["/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btns_bg"
+            android:padding="5dp"
+            android:inputType="number"
+            android:gravity="center"
+            android:id="@+id/from"
+            android:hint="a"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textSize="22sp"
+            android:text=","/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btns_bg"
+            android:gravity="center"
+            android:padding="5dp"
+            android:id="@+id/to"
+            android:inputType="number"
+            android:hint="b"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:text="]"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:gravity="center"
+        android:text="{}"
+        android:letterSpacing="0.3"
+        android:textSize="18sp"
+        android:id="@+id/domain"
+        android:textStyle="bold"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Empty Domain"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:background="@color/colorPrimary"
+        android:textColor="#FFF"
+        android:id="@+id/clear1"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimary"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:textSize="19sp"
+        android:textColor="#000"
+        android:id="@+id/selectcodomain"
+        android:text="Select your codomain :" />
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:weightSum="3"
+        android:background="@drawable/btns_bg">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="0dp"
+            android:layout_weight="1"
+            android:textColor="#FFF"
+            android:id="@+id/decrement2"
+            android:textStyle="bold"
+            android:background="@color/colorPrimary"
+            android:text="—"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="15"
+            android:textColor="@android:color/black"
+            android:inputType="number"
+            android:keepScreenOn="false"
+            android:id="@+id/display2"
+            android:gravity="center"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="0dp"
+            android:textSize="25sp"
+            android:textColor="#FFF"
+            android:background="@color/colorPrimary"
+            android:id="@+id/increment2"
+            android:text="+"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp">
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:id="@+id/cb2"
+            android:text="Select Range [ a, b ]"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:id="@+id/right_par"
+            android:text="["/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btns_bg"
+            android:padding="5dp"
+            android:inputType="number"
+            android:gravity="center"
+            android:id="@+id/from2"
+            android:hint="a"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textSize="22sp"
+            android:id="@+id/comma"
+            android:text=","/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btns_bg"
+            android:gravity="center"
+            android:padding="5dp"
+            android:id="@+id/to2"
+            android:inputType="number"
+            android:hint="b"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:id="@+id/left_par"
+            android:text="]"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:gravity="center"
+        android:text="{}"
+        android:letterSpacing="0.3"
+        android:textSize="18sp"
+        android:id="@+id/codomain"
+        android:textStyle="bold"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Empty Codomain"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:background="@color/colorPrimary"
+        android:textColor="#FFF"
+        android:id="@+id/clear2"
+        android:layout_marginBottom="20dp"/>
+
+
+</LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

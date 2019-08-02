@@ -1,0 +1,81 @@
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    tools:context="com.hussamdev.discretestructures.Fragments.ThirdStepFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="#000"
+        android:text="Domain Of Definition" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:fontFamily="casual"
+        android:text="{1,2,3}"
+        android:letterSpacing="0.3"
+        android:textSize="18sp"
+        android:id="@+id/ddef"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="#000"
+        android:text="Range" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:fontFamily="casual"
+        android:text="{1,2,3}"
+        android:letterSpacing="0.3"
+        android:textSize="18sp"
+        android:id="@+id/range"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimary"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:fontFamily="casual"
+        android:text="R={(1,2)(2,3)}"
+        android:letterSpacing="0.3"
+        android:textSize="18sp"
+        android:id="@+id/relation"
+        android:textStyle="bold"/>
+
+    <ViewStub
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layout_stub"
+        android:inflatedId="@+id/subView"
+
+        />
+</LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>
